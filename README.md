@@ -38,20 +38,38 @@ iq-reel/hooks.json      the 20 formulas (extend it from /iq-viral findings)
 
 ## Install
 
-**Claude Code** (full power, tools run):
+**Easiest: paste this into Claude Code**
 
-```bash
-cp -r skills/iq-* ~/.claude/skills/
-mkdir -p ~/.claude/instagram-iq/brands/hus
-cp templates/voice-hus.md ~/.claude/instagram-iq/brands/hus/voice.md   # then fill it
+```
+https://github.com/Temhja/hus-instagram-iq
+
+Install this skill pack, then confirm /iq-reel works.
 ```
 
-The skills reference each other's folders (`../iq-human/`), so install all ten
-together.
+**Claude Code, as a plugin**
 
-**claude.ai / Claude app**: upload each `iq-*.zip` from `dist/` as a skill
-(Settings → Capabilities → Skills). Keep each brand's `voice.md` as a Project
-doc named `ig/<brand>/voice.md`.
+```
+/plugin marketplace add Temhja/hus-instagram-iq
+/plugin install hus-instagram-iq
+```
+
+**Claude Code, by hand**
+
+```bash
+git clone https://github.com/Temhja/hus-instagram-iq.git
+cp -r hus-instagram-iq/skills/iq-* ~/.claude/skills/
+```
+
+Install all ten together; the tools share files across folders.
+
+**Claude app (desktop / web)**: zip each `skills/iq-*` folder and upload it under
+Settings → Capabilities → Skills. For `iq-reel`, `iq-caption` and `iq-viral`,
+first copy `iq-human/iqtext.py` and `iq-human/lexicon.json` into the folder
+(and for `iq-viral` also `iq-reel/hookscore.py` and `iq-reel/hooks.json`), so
+each zip works on its own.
+
+Then fill `templates/voice.md` for your brand, or send Claude three of your
+own reels and say «اكتب voice.md من هذني».
 
 ## Brands
 

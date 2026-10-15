@@ -1,0 +1,8 @@
+{
+  "name": "hus-instagram-iq",
+  "description": "Ten Claude skills that run Instagram for Iraqi brands in Iraqi Arabic: Reels in the HOOK > LEAD > BODY > OPEN LOOP > CTA framework off 20 Iraqi hook formulas with a scored hook and timed beat sheet, outlier-multiple viral research, an Arabic caption linter, carousels, stories, comment/DM triage with WhatsApp handoff, profile score, weekly plan with Iraqi calendar checks, audits, and an Arabic humanizer. Multi-brand for agency use.",
+  "version": "1.0.0",
+  "author": { "name": "HUS Office" },
+  "license": "MIT",
+  "keywords": ["instagram", "reels", "arabic", "iraqi", "baghdad", "agency", "humanizer", "marketing"]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "hus-instagram-iq",
+  "description": "Iraqi-Arabic Instagram skill pack for Claude, by HUS Office",
+  "owner": { "name": "HUS Office" },
+  "plugins": [
+    {
+      "name": "hus-instagram-iq",
+      "description": "Ten Claude skills that run Instagram in Iraqi Arabic for HUS and agency clients.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
